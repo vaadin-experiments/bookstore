@@ -99,11 +99,11 @@ public class MainLayout extends AppLayout implements RouterLayout {
         return routerButton;
     }
 
-    private void registerAdminViewIfApplicable() {
-        // register the admin view dynamically only for any admin user logged in
-            RouteConfiguration.forSessionScope().setRoute(AdminView.VIEW_NAME,
-                    AdminView.class, MainLayout.class);
-    }
+//     private void registerAdminViewIfApplicable() {
+//         // register the admin view dynamically only for any admin user logged in
+//             RouteConfiguration.forSessionScope().setRoute(AdminView.VIEW_NAME,
+//                     AdminView.class, MainLayout.class);
+//     }
 
     @Override
     protected void onAttach(AttachEvent attachEvent) {
@@ -119,7 +119,7 @@ public class MainLayout extends AppLayout implements RouterLayout {
 //        if (accessControl.isUserInRole(AccessControl.ADMIN_ROLE_NAME)) {
 
             // Create extra navigation target for admins
-            registerAdminViewIfApplicable();
+        //     registerAdminViewIfApplicable();
 
             // The link can only be created now, because the RouterLink checks
             // that the target is valid.

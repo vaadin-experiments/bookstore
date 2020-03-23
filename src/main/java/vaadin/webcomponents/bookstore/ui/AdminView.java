@@ -16,6 +16,8 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.binder.BeanValidationBinder;
 import com.vaadin.flow.data.provider.ListDataProvider;
 import com.vaadin.flow.data.renderer.ComponentRenderer;
+import com.vaadin.flow.router.Route;
+
 import vaadin.webcomponents.bookstore.backend.DataService;
 import vaadin.webcomponents.bookstore.backend.data.Category;
 
@@ -24,6 +26,7 @@ import vaadin.webcomponents.bookstore.backend.data.Category;
  * <p>
  * Allows CRUD operations for the book categories.
  */
+@Route(value = "Admin", layout = MainLayout.class)
 public class AdminView extends VerticalLayout {
 
     public static final String VIEW_NAME = "Admin";
