@@ -58,9 +58,10 @@ public class MainLayout extends AppLayout implements RouterLayout {
         final String resolvedImage = VaadinService.getCurrent().resolveResource(
                 "img/table-logo.png", VaadinSession.getCurrent().getBrowser());
 
-        final Image image = new Image(resolvedImage, "");
         final Label title = new Label("Bookstore");
-        top.add(image, title);
+        //TODO
+        //final Image image = new Image(resolvedImage, "");
+        //top.add(image, title);
         top.add(title);
         addToNavbar(top);
 
